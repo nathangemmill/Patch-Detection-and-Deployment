@@ -20,8 +20,8 @@ Write-Host "You're running Windows 10 champ"
 ElseIf($OSVersion -match "Windows Server 2008 R2")
 {
 Write-Host "You're running Windows Server 2008 R2 champ"
-wget "http://download.windowsupdate.com/c/msdownload/update/software/secu/2021/10/windows8.1-kb5006729-x64_5f228dd572d5607d8c0e41d695fcf2e4404e56fb.msu" -OutFile "2012R2-Patch.msu"
-wusa.exe .\2012R2-Patch.msu /quiet /norestart
+wget "http://download.windowsupdate.com/c/msdownload/update/software/secu/2021/10/windows6.1-kb5006728-x64_f71394e7d9bf55ef317467bd2206853c1a5cd773.msu" -OutFile "2008R2-Patch.msu"
+wusa.exe .\2008R2-Patch.msu /quiet /norestart
 }
 ElseIf($OSVersion -match "Windows Server 2012")
 {
